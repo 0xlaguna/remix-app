@@ -8,6 +8,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/server": "^11.11.0",
+    "@mantine/core": "^6.0.10",
+    "@mantine/hooks": "^6.0.10",
+    "@mantine/remix": "^6.0.10",
     "@netlify/functions": "^1.4.0",
     "@remix-run/css-bundle": "^1.16.0",
     "@remix-run/netlify": "^1.16.0",

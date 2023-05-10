@@ -5,14 +5,12 @@
  */
 
 import { RemixBrowser } from "@remix-run/react";
-import { startTransition, StrictMode } from "react";
-import { hydrateRoot } from "react-dom/client";
+import { hydrate } from "react-dom";
+import { ClientProvider } from "@mantine/remix";
 
-startTransition(() => {
-  hydrateRoot(
-    document,
-    <StrictMode>
-      <RemixBrowser />
-    </StrictMode>
-  );
-});
+hydrate(
+  <ClientProvider>
+    <RemixBrowser />
+  </ClientProvider>,
+  document
+);
